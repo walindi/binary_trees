@@ -75,3 +75,17 @@ typedef struct binary_tree_s heap_t;
   - `tree` is a pointer to the root node of the tree to traverse
   - `func` s a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function
   - If `tree` or `func` is `NULL` nothing is done
+- [7-binary_tree_inorder.c](7-binary_tree_inorder.c) goes through a binary tree using in-order traversal
+  - Prototype: `void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));`
+  - `tree` is a pointer to the root node of the tree to traverse
+  - `func` is a pointer to a function to call for each node. The value in the node is passed as a parameter to this function.
+  - If `tree` or `func` is `NULL`, the function does nothing
+- [8-binary_tree_postorder.c](8-binary_tree_postorder.c) goes through a binary tree using post-order traversal
+  - Prototype: `void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));`
+  - `tree` is a pointer to the root node of the tree to traverse
+  - `func` is a pointer to a function to call for each node. The value in the node is passed as a parameter to this function
+  - If `tree` or `func` is `NULL`, the function does nothing
+- [9-binary_tree_height.c](9-binary_tree_height.c) measures the height of a binary tree.
+  - Prototype: `size_t binary_tree_height(const binary_tree_t *tree);`
+  - `tree` is a pointer to the root of the tree to measure the height
+  - If `tree` is `NULL`, the function returns `0`
